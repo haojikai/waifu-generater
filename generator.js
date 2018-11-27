@@ -33,7 +33,7 @@ function generateBody() {
     var weight = Math.round(bmi*(height/100)*(height/100));
     var text2 = document.getElementById("weight");
     text2.innerHTML = weight;
-    text1.innerHTML="园园多重她多重";
+    text2.innerHTML="园园多重她多重";
 }
 function generateAge() {
     var gH = Math.round(normalDistribution(20, 2));
@@ -45,16 +45,18 @@ function generateHair() {
     randomData("hairstyle",Hair_data);
     var newColor = randomRGB();
     var text2 = document.getElementById("hairColor");
-    text2.innerHTML = newColor;
-    text2.style.backgroundColor = newColor;
-    text2.style.backgroundColor = "园园啥色她啥色";
+    text2.innerHTML = "园园啥色她啥色";
+}
+   // text2.style.backgroundColor = newColor;
+    //text2.style.backgroundColor = "园园啥色她啥色";
 }
 function generateEyes() {
     var text1 = document.getElementById("eyeColor");
     var newColor = randomRGB();
     text1.innerHTML = newColor;
-    text1.style.backgroundColor = newColor;
-    text1.style.backgroundColor = "园园啥色她啥色";
+    text1.innerHTML ="园园啥色她啥色";
+    //text1.style.backgroundColor = newColor;
+    //text1.style.backgroundColor = "园园啥色她啥色";
 }
 function generateAttribute() {
     //randomData("attribute",Attribute_data);

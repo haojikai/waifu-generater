@@ -97,9 +97,8 @@ function qd(){
      var text1 = document.getElementById("shdz");
 
 
- if(confirm("收货地址是"+text1.value+"吗？"))
- {
-    alert("哈哈哈，，，你似不似撒？");
- }
+    if(confirm("收货地址是"+text1.value+"吗？")){
+        alert("哈哈哈，，，你似不似撒？");
+    }
 }
-}
+

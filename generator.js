@@ -12,11 +12,15 @@ function startGenerator() {
 }
 
 function generateCup() {
-    randomData("cupsize",Cupsize_data);
+    //randomData("cupsize",Cupsize_data);
+    var text1 = document.getElementById("cupsize");
+    text1.innerHTML = "哈哈哈~~~   必须D!!";
 }
 
 function generateSkin() {
-    randomData("skin",Skin_data);
+    //randomData("skin",Skin_data);
+    var text1 = document.getElementById("cupsize");
+    text1.innerHTML = "种子般的黄！";
 }
 
 function generateBody() {
@@ -24,15 +28,18 @@ function generateBody() {
     height = Math.round(height);
     var text1 = document.getElementById("height");
     text1.innerHTML=height;
+     text1.innerHTML="园园多高她多高";
     var bmi = normalDistribution(20, 1);
     var weight = Math.round(bmi*(height/100)*(height/100));
     var text2 = document.getElementById("weight");
     text2.innerHTML = weight;
+    text1.innerHTML="园园多重她多重";
 }
 function generateAge() {
     var gH = Math.round(normalDistribution(20, 2));
     var text1 = document.getElementById("age");
-    text1.innerHTML = gH;    
+    text1.innerHTML = gH;   
+    text1.innerHTML = "园园多大她多大";
 }
 function generateHair() {
     randomData("hairstyle",Hair_data);
@@ -40,18 +47,24 @@ function generateHair() {
     var text2 = document.getElementById("hairColor");
     text2.innerHTML = newColor;
     text2.style.backgroundColor = newColor;
+    text2.style.backgroundColor = "园园啥色她啥色";
 }
 function generateEyes() {
     var text1 = document.getElementById("eyeColor");
     var newColor = randomRGB();
     text1.innerHTML = newColor;
     text1.style.backgroundColor = newColor;
+    text1.style.backgroundColor = "园园啥色她啥色";
 }
 function generateAttribute() {
-    randomData("attribute",Attribute_data);
+    //randomData("attribute",Attribute_data);
+    var text1 = document.getElementById("attribute");
+    text1.innerHTML = "贤惠，大方，漂亮，一切的好词~";
 }
 function generateCharacter() {  
-    randomData("character",Character_data);
+    //randomData("character",Character_data);
+      var text1 = document.getElementById("character");
+    text1.innerHTML = "就是好..";
 }
 
 function normalDistribution(u, v) {

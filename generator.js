@@ -9,6 +9,8 @@ function startGenerator() {
     generateCharacter();
     generateCup();
     generateSkin();
+    document.getElementById("shdzdiv").style.display="block";
+    document.getElementById("yydiv").style.display="block";
 }
 
 function generateCup() {
@@ -49,7 +51,6 @@ function generateHair() {
 }
    // text2.style.backgroundColor = newColor;
     //text2.style.backgroundColor = "园园啥色她啥色";
-}
 function generateEyes() {
     var text1 = document.getElementById("eyeColor");
     var newColor = randomRGB();

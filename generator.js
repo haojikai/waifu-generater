@@ -21,7 +21,7 @@ function generateCup() {
 
 function generateSkin() {
     //randomData("skin",Skin_data);
-    var text1 = document.getElementById("cupsize");
+    var text1 = document.getElementById("skin");
     text1.innerHTML = "种子般的黄！";
 }
 

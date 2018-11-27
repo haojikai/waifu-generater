@@ -93,3 +93,13 @@ function randomData(elementId,dataName) {
     var text1 = document.getElementById(elementId);
     text1.innerHTML = dataName[t1Num];    
 }
+function qd(){
+     var text1 = document.getElementById("shdz");
+
+
+ if(confirm("收货地址是"+text1.value+"吗？"))
+ {
+    alert("哈哈哈，，，你似不似撒？");
+ }
+}
+}
